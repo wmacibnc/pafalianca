@@ -1,0 +1,123 @@
+/* 
+Desenvolvido por Mister W Informática 
+Wesley Martins Alves da Costa
+wesley@misterwinformatica.com.br
+www.misterwinformatica.com.br
+Site: www.pafalianca.com.br
+*/
+
+body{ 
+	width:800px; /* largura fixa */
+	margin:0 auto;
+	background: url("../imagens/background.jpg") no-repeat  scroll 50% 0  #143d97;
+	background-attachment: fixed;
+	font-family: Agency FB;
+}
+#logo{
+	width:330px;
+	height: 130px;
+	float: left;
+}
+#menusuperior{
+	width: 470px;
+	height: 70px;
+	float: left;
+}
+#menuinferior{
+	width: 470px;
+	height: 60px;
+	float: left;
+}
+#adesao{
+	width: 330px;
+	height: 445px;
+	float: left;
+	background-image: url('../imagens/fundoadesao.png');
+	background-position: center;
+}
+#bannerlateral{
+	width: 470;
+	height: 445px;
+	float: left;
+}
+#bannerCentral{
+	width: 800px;
+	height: 445px;
+	float: left;
+}
+#planos{
+	width: 800px;
+	height: 210px;
+	background-image: url('../imagens/fundoplanos.png');
+	float: left;
+	margin-bottom: 50px;
+}
+#blog{
+	width:265px;
+	height: 200px;
+	float: left;
+	text-align: left;
+}
+#duvidas{
+	width:265px;
+	height: 200px;
+	float: left;
+	text-align: center;
+}
+#encontre{
+	width:265px;
+	height: 200px;
+	float: right;
+	text-align: right;
+}
+#institucional{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+#redes{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+#convenios{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+#trabalhe{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+#rodape{
+	width: 800px;
+	height: 300px;
+	background-image:url('../imagens/rodape.png');
+	float: left;
+}
+/* Classes*/
+.logo{
+	margin-top: 24px;
+	margin-left: 30px;
+}
+.institucional{
+	position: absolute;
+	top: 69em;
+	left: 8em;
+}
+.redes{
+	position: absolute;
+	top: 74em;
+	left: 20em;
+}
+.convenios{
+	position: absolute;
+	top: 72em;
+	left: 33em;
+}
+.trabalhe{
+	position: absolute;
+	top: 68em;
+	left: 45em;
+}
