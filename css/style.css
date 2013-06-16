@@ -1,4 +1,4 @@
-/* 
+﻿/* 
 Desenvolvido por Mister W Informática 
 Wesley Martins Alves da Costa
 wesley@misterwinformatica.com.br
@@ -7,11 +7,15 @@ Site: www.pafalianca.com.br
 */
 
 body{ 
-	width:800px; /* largura fixa */
-	margin:0 auto;
-	background: url("../imagens/background.jpg") no-repeat  scroll 50% 0  #143d97;
-	background-attachment: fixed;
 	font-family: Agency FB;
+	background-color:white;
+}
+#centro{
+	margin-left: auto;
+	margin-right: auto;
+    background-color: white;
+    width:800px;
+    height:auto;
 }
 #logo{
 	width:330px;
@@ -102,22 +106,16 @@ body{
 	margin-left: 30px;
 }
 .institucional{
-	position: absolute;
-	top: 69em;
-	left: 8em;
+	margin-top: 110px;
+	margin-left: 25px;
 }
 .redes{
-	position: absolute;
-	top: 74em;
-	left: 20em;
+	margin-top: 190px;
 }
 .convenios{
-	position: absolute;
-	top: 72em;
-	left: 33em;
+	margin-top: 150px;
+	
 }
 .trabalhe{
-	position: absolute;
-	top: 68em;
-	left: 45em;
+	margin-top: 90px;
 }

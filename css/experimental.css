@@ -258,7 +258,8 @@ ul.menuBuild ul.submenu li a:hover{
 ul.menuBuild li a {  /* for the main menu links */
 	color: #fff; 
 	display: block; 
-	width: 100%; 
+/*wesley*/
+	width: 410px; 
 	}
 	
 ul.menuBuild li:hover > a { 
