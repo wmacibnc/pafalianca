@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://www.cssplay.co.uk/menus/circular-sub.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title> Stu Nicholls | CSSplay | A circular menu with circular sub menus </title>
+<meta name="Keywords" content="cssplay, css, play, Cascading, Style, Sheets, experiments, demonstrations, menu, circular, multi, level, sub, menu">
+<meta name="Description" content="CSS play - a circular menu with circular sub menus">
+
+<meta name="Author" content="Stu Nicholls">
+<meta name="verify-v1" content="n3Dpx4NklZjg5p/Tq7h1q+Oj6Ml83crtkO/PwepVQ6Y=">
+<meta http-equiv="imagetoolbar" content="no">
+<link rel="meta" href="http://www.cssplay.co.uk/labels.rdf" type="application/rdf+xml" title="ICRA labels">
+<meta http-equiv="pics-Label" content="(pics-1.1 &quot;http://www.icra.org/pics/vocabularyv03/&quot; l gen true for &quot;http://cssplay.co.uk&quot; r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 0)  gen true for &quot;http://www.cssplay.co.uk&quot; r (n 0 s 0 v 0 l 0 oa 0 ob 0 oc 0 od 0 oe 0 of 0 og 0 oh 0 c 0))">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.cssplay.co.uk/feed.xml">
+<link rel="shortcut icon" href="http://www.cssplay.co.uk/menus/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.cssplay.co.uk/menus/favicon.ico" type="image/ico">
+
+<link href="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/css" rel="stylesheet" type="text/css">
+<link href="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/css(1)" rel="stylesheet" type="text/css">
+
+<!--[if gte IE 7]><!-->
+<script src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/plusone.js" gapi_processed="true"></script><script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'fdc2c422-ae8d-414c-a5bb-68c389e4688d'});</script>
+<!--<![endif]-->
+
+<link rel="stylesheet" media="all" type="text/css" href="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/default.css">
+
+
+<style type="text/css">
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menu/circular-sub.html
+Copyright (c) Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+#menu {padding:0; margin:0 auto; list-style:none; position:relative; width:270px; height:270px;}
+#menu ul {padding:0; margin:0; list-style:none; position:absolute; left:-9999px; width:140px; height:140px; background:url(trans.gif);}
+#menu li {display:block; width:70px; height:70px; position:absolute; text-decoration:none; color:#000;}
+
+#menu li a {display:block; width:70px; height:70px; text-decoration:none; color:#000;}
+#menu li a b {position:absolute; left:-9999px; display:block; width:58px; height:25px; text-align:center; font-family:arial, sans-serif; font-size:12px;}
+#menu li.home {background:url(c-icons/home.gif); left:100px; top:0;}
+#menu li.pencil {background:url(c-icons/pencil.gif); left:170px; top:30px;}
+#menu li.chat {background:url(c-icons/chat.gif); left:200px; top:100px;}
+#menu li.image {background:url(c-icons/image.gif); left:170px; top:170px;}
+#menu li.shop {background:url(c-icons/shop.gif); left:100px; top:200px;}
+#menu li.cash {background:url(c-icons/money.gif); left:30px; top:170px;}
+#menu li.music {background:url(c-icons/sound.gif); left:0; top:100px;}
+#menu li.mail {background:url(c-icons/mail.gif); left:30px; top:30px;}
+
+#menu li a:hover {border:0; z-index:500;}
+
+#menu li.home a:hover ul, #menu li.home:hover ul {left:-35px; top:65px;}
+#menu li.pencil a:hover ul, #menu li.pencil:hover ul {left:-105px; top:35px;}
+#menu li.chat a:hover ul, #menu li.chat:hover ul {left:-135px; top:-35px;}
+#menu li.image a:hover ul, #menu li.image:hover ul {left:-105px; top:-105px;}
+#menu li.shop a:hover ul, #menu li.shop:hover ul {left:-35px; top:-135px;}
+#menu li.cash a:hover ul, #menu li.cash:hover ul {left:35px; top:-105px;}
+#menu li.music a:hover ul, #menu li.music:hover ul {left:65px; top:-35px;}
+#menu li.mail a:hover ul, #menu li.mail:hover ul {left:30px; top:35px;}
+
+#menu :hover ul li {width:40px; height:40px;}
+
+#menu :hover ul li a {position:absolute; display:block; width:40px; height:40px;}
+
+#menu li ul li a.p1 {left:70px; top:0;}
+#menu li ul li a.p2 {left:98px; top:30px;}
+#menu li ul li a.p3 {left:98px; top:70px;}
+#menu li ul li a.p4 {left:70px; top:100px;}
+#menu li ul li a.p5 {left:30px; top:100px;}
+#menu li ul li a.p6 {left:0; top:70px;}
+#menu li ul li a.p7 {left:0; top:30px;}
+#menu li ul li a.p8 {left:30px; top:0;}
+
+#menu li.home a:hover b, #menu li.home:hover b {left:5px; top:125px;}
+#menu li.pencil a:hover b, #menu li.pencil:hover b {left:-65px; top:95px;}
+#menu li.chat a:hover b, #menu li.chat:hover b {left:-95px; top:25px;}
+#menu li.image a:hover b, #menu li.image:hover b {left:-65px; top:-45px;}
+#menu li.shop a:hover b, #menu li.shop:hover b {left:5px; top:-75px;}
+#menu li.cash a:hover b, #menu li.cash:hover b {left:75px; top:-45px;}
+#menu li.music a:hover b, #menu li.music:hover b {left:105px; top:25px;}
+#menu li.mail a:hover b, #menu li.mail:hover b {left:70px; top:95px;}
+
+#menu li.home a:hover ul li a b,
+#menu li.pencil a:hover ul li a b,
+#menu li.chat a:hover ul li a b,
+#menu li.image a:hover ul li a b,
+#menu li.shop a:hover ul li a b,
+#menu li.cash a:hover ul li a b,
+#menu li.music a:hover ul li a b,
+#menu li.mail a:hover ul li a b,
+#menu li.home:hover ul li a b,
+#menu li.pencil:hover ul li a b,
+#menu li.chat:hover ul li a b,
+#menu li.image:hover ul li a b,
+#menu li.shop:hover ul li a b,
+#menu li.cash:hover ul li a b,
+#menu li.music:hover ul li a b,
+#menu li.mail:hover ul li a b{left:-9999px; background:#fff;}
+
+#menu li ul li a.pencil1 {background:url(c-icons/pencil1.gif);}
+#menu li ul li a.pencil2 {background:url(c-icons/pencil2.gif);}
+
+#menu li ul li a.chat1 {background:url(c-icons/chat1.gif);}
+#menu li ul li a.chat2 {background:url(c-icons/chat2.gif);}
+#menu li ul li a.chat3 {background:url(c-icons/chat3.gif);}
+#menu li ul li a.chat4 {background:url(c-icons/chat4.gif);}
+
+#menu li ul li a.image1 {background:url(c-icons/image1.gif);}
+#menu li ul li a.image2 {background:url(c-icons/image2.gif);}
+#menu li ul li a.image3 {background:url(c-icons/image3.gif);}
+#menu li ul li a.image4 {background:url(c-icons/image4.gif);}
+#menu li ul li a.image5 {background:url(c-icons/image5.gif);}
+
+#menu li ul li a.shop1 {background:url(c-icons/shop1.gif);}
+#menu li ul li a.shop2 {background:url(c-icons/shop2.gif);}
+#menu li ul li a.shop3 {background:url(c-icons/shop3.gif);}
+
+#menu li ul li a.money1 {background:url(c-icons/money1.gif);}
+#menu li ul li a.money2 {background:url(c-icons/money2.gif);}
+#menu li ul li a.money3 {background:url(c-icons/money3.gif);}
+
+#menu li ul li a.sound1 {background:url(c-icons/sound1.gif);}
+#menu li ul li a.sound2 {background:url(c-icons/sound2.gif);}
+#menu li ul li a.sound3 {background:url(c-icons/sound3.gif);}
+
+#menu li ul li a.mail1 {background:url(c-icons/mail1.gif);}
+#menu li ul li a.mail2 {background:url(c-icons/mail2.gif);}
+#menu li ul li a.mail3 {background:url(c-icons/mail3.gif);}
+#menu li ul li a.mail4 {background:url(c-icons/mail4.gif);}
+
+#menu :hover ul li a.p1:hover b {left:-30px; top:60px;}
+#menu :hover ul li a.p2:hover b {left:-58px; top:30px;}
+#menu :hover ul li a.p3:hover b {left:-58px; top:-10px;}
+#menu :hover ul li a.p4:hover b {left:-30px; top:-40px;}
+#menu :hover ul li a.p5:hover b {left:10px; top:-40px;}
+#menu :hover ul li a.p6:hover b {left:40px; top:-10px;}
+#menu :hover ul li a.p7:hover b {left:40px; top:30px;}
+#menu :hover ul li a.p8:hover b {left:10px; top:60px;}
+
+</style>
+
+<script type="text/javascript" id="_bsap_js_1e5949aa72023d7e6519f404fd6280d6" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/s_1e5949aa72023d7e6519f404fd6280d6.js" async="async"></script><script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/getAppDefault.esi"></script><script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/checkOAuth.esi"></script><link rel="stylesheet" type="text/css" href="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/buttons.20a85a6a67053717023e8d12a9dba430.css"><script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/getAppDefault(1).esi"></script></head>
+
+<body id="www-cssplay-co-uk" class="menus">
+<div id="wrapper">
+
+	<div id="topad">
+				<div id="googletop">
+			<script type="text/javascript">
+			Vertical1242022 = false;
+			ShowAdHereBanner1242022 = true;
+			RepeatAll1242022 = false;
+			NoFollowAll1242022 = false;
+			BannerStyles1242022 = new Array(
+				"a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden; float:left;}",
+				"img{border:0;}",
+				"a.adhere{color:#666;font-weight:bold;font-size:12px;background:#f8f8f8;text-align:center;}",
+				"a.adhere:hover{background:#ddd;color:#333;}"
+			);
+			document.write(unescape("%3Cscript src='"+document.location.protocol+"//s3.buysellads.com/1242022/1242022.js?v="+Date.parse(new Date())+"' type='text/javascript'%3E%3C/script%3E"));
+			</script><script src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/1242022.js" type="text/javascript"></script><style type="text/css">div.bsap_1242022 {width:100%;display:block;} div.bsap_1242022 a{width:468px;} div.bsap_1242022 a img{padding:0;} div.bsap_1242022 a em{font-style:normal;} div.bsap_1242022 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden; float:left;} div.bsap_1242022 img{border:0;} div.bsap_1242022 a.adhere{color:#666;font-weight:bold;font-size:12px;background:#f8f8f8;text-align:center;} div.bsap_1242022 a.adhere:hover{background:#ddd;color:#333;} div.bsap_1242022 a.adhere{width:468px;height:60px;line-height:480%;} html>body div.bsap_1242022 a.adhere{width:466px;height:58px;} div.bsap_1242022 img.s{height:0;width:0;}div#bsap_1242022 {width:100%;display:block;} div#bsap_1242022 a{width:468px;} div#bsap_1242022 a img{padding:0;} div#bsap_1242022 a em{font-style:normal;} div#bsap_1242022 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden; float:left;} div#bsap_1242022 img{border:0;} div#bsap_1242022 a.adhere{color:#666;font-weight:bold;font-size:12px;background:#f8f8f8;text-align:center;} div#bsap_1242022 a.adhere:hover{background:#ddd;color:#333;} div#bsap_1242022 a.adhere{width:468px;height:60px;line-height:480%;} html>body div#bsap_1242022 a.adhere{width:466px;height:58px;} div#bsap_1242022 img.s{height:0;width:0;}</style><script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/bsa.js" id="bsap_js"></script><div id="bsap_1242022" class="bsap_1242022 bsap"><a href="http://stats.buysellads.com/click.go?z=1242022&b=3292637&g=&s=&sw=1024&sh=768&br=chrome,27,win&r=0.9692568522877991&link=http://www.psd2html.com/?utm_source=cssplay.co.uk&utm_medium=banner&utm_campaign=new-p2h" onmouseover="window.status = &#39;http://www.psd2html.com/?utm_source=cssplay.co.uk&amp;utm_medium=banner&amp;utm_campaign=new-p2h&#39;; return true;" onmouseout="window.status=&#39;&#39;; return true;" class="ad1 odd" title="PSD2HTML.com" id="bsa_3292637" target="_blank"><img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/168080-1366364381.png" width="468" height="60" alt="PSD2HTML.com"></a></div>
+		</div>
+		<img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/shadow_logo.png" alt="">
+		<img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/your-ad-here.gif" alt="your ad here">	</div> <!-- end topad -->
+
+	<div id="header">
+				<div id="logo">
+			<h1><a accesskey="1" href="http://www.cssplay.co.uk/index.html" title="Home Page">CSS</a></h1>
+			<h2><a accesskey="1" href="http://www.cssplay.co.uk/index.html" title="Home Page"><span><i>p</i>la</span><span class="backy">y</span></a></h2>
+			<h3>Experiments with Cascading Style Sheets</h3>
+		</div> <!-- end of logo -->
+
+		<ul id="main_menu">
+			<li id="demos"><a accesskey="A" href="http://www.cssplay.co.uk/menu/">Demos</a></li>
+			<li id="menus"><a accesskey="M" href="http://www.cssplay.co.uk/menus/">Menus</a></li>
+			<li id="layouts"><a accesskey="Y" href="http://www.cssplay.co.uk/layouts/">Layouts</a></li>
+			<li id="boxes"><a accesskey="B" href="http://www.cssplay.co.uk/boxes/">Boxes</a></li>
+			<li id="mozilla"><a accesskey="Z" href="http://www.cssplay.co.uk/mozilla/">Mozilla</a></li>
+			<li id="explorer"><a accesskey="E" href="http://www.cssplay.co.uk/ie/">Explorer</a></li>
+			<li id="opacity"><a accesskey="O" href="http://www.cssplay.co.uk/opacity/">Opacity</a></li>
+			<li id="java"><a accesskey="J" href="http://www.stunicholls.com/" rel="nofollow" title="Over to http://www.stunicholls.com">Javascript</a></li>
+		</ul>
+
+		<ul id="sub_menu">
+			<li id="help"><a accesskey="H" href="http://www.cssplay.co.uk/service.html" title="Help and Services">HELP &amp; ASSISTANCE</a></li>
+			<li id="faqs"><a accesskey="Q" href="http://www.cssplay.co.uk/faqs.html" title="FAQ page">FAQs</a></li>
+			<li id="contact"><a accesskey="N" href="http://www.cssplay.co.uk/w3c/contact.html" title="Contact us">CONTACT ME</a></li>
+			<li id="privacy"><a accesskey="V" href="http://www.cssplay.co.uk/w3c/privacy.html" title="Privacy Policy">PRIVACY POLICY</a></li>
+			<li id="sitemap"><a accesskey="S" href="http://www.cssplay.co.uk/sitemap.html" title="Site map">SITE MAP</a></li>
+			<li id="keys"><a accesskey="K" href="http://www.cssplay.co.uk/accesskeys.html" title="Accesskeys">ACCESSKEYS</a></li>
+			<li id="support"><a accesskey="P" href="http://www.cssplay.co.uk/support.html" title="Support">SUPPORT</a></li>
+			<li id="feed"><a accesskey="R" href="http://www.cssplay.co.uk/feed.xml" title="RSS2.0 feed"><img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/rss.png" alt="rss feed" title="RSS2.0 feed"></a></li>
+		</ul>
+
+		<ul id="navigation">
+			<li><a href="http://www.cssplay.co.uk/index.html">HOME</a></li>
+			<li><a href="http://www.cssplay.co.uk/menus/index.html">LIST</a></li>		</ul>
+
+		<div id="search">
+			<div class="cse-branding-right" style="background-color:transparent;color:#000000">
+				<div class="cse-branding-form">
+					<form action="http://www.cssplay.co.uk/search.html" id="cse-search-box">
+						<div>
+							<input type="hidden" name="cx" value="partner-pub-6651950180071236:chrtwm-4ria">
+							<input type="hidden" name="cof" value="FORID:10">
+							<input type="hidden" name="ie" value="UTF-8">
+							<input type="text" name="q" size="19" class="search">
+							<input type="submit" name="sa" value=" Search">
+						</div>
+					</form>
+				</div>
+				<div class="cse-branding-logo">
+					<img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/poweredby_000000.gif" alt="Google">
+				</div>
+				<div class="cse-branding-text">
+					Custom Search
+				</div>
+			</div>
+		</div> <!-- end of search -->	</div> <!-- end header -->
+
+	<div id="content">
+		<div id="info">
+
+<h2>A circular menu with sub menus</h2>
+<h3>10th November 2008</h3>
+
+<ul id="menu">
+	<li class="home"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>HOME</b></a></li>
+	<li class="pencil"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>DRAW</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="p1 pencil1" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Draw 1</b></a></li>
+			<li><a class="p2 pencil2" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Draw 2</b></a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="chat"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>CHAT</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="p2 chat1" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Chat 1</b></a></li>
+			<li><a class="p3 chat2" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Chat 2</b></a></li>
+			<li><a class="p4 chat3" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Chat 3</b></a></li>
+			<li><a class="p5 chat4" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Chat 4</b></a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="image"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>PHOTO</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="p3 image1" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Photo 1</b></a></li>
+			<li><a class="p4 image2" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Photo 2</b></a></li>
+			<li><a class="p5 image3" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Photo 3</b></a></li>
+			<li><a class="p6 image4" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Photo 4</b></a></li>
+			<li><a class="p7 image5" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Photo 5</b></a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="shop"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>SHOP</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="p4 shop1" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Shop 1</b></a></li>
+			<li><a class="p5 shop2" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Shop 2</b></a></li>
+			<li><a class="p6 shop3" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Shop 3</b></a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="cash"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>MONEY</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="p5 money1" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Money 1</b></a></li>
+			<li><a class="p6 money2" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Money 2</b></a></li>
+			<li><a class="p7 money3" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Money 3</b></a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="music"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>AUDIO</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="p6 sound1" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Audio 1</b></a></li>
+			<li><a class="p7 sound2" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Audio 2</b></a></li>
+			<li><a class="p8 sound3" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Audio 3</b></a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="mail"><a href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>MAIL</b><!--[if gte IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul>
+			<li><a class="p7 mail1" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Mail 1</b></a></li>
+			<li><a class="p8 mail2" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Mail 2</b></a></li>
+			<li><a class="p1 mail3" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Mail 3</b></a></li>
+			<li><a class="p2 mail4" href="http://www.cssplay.co.uk/menus/circular-sub.html#url"><b>Mail 4</b></a></li>
+		</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+</ul>
+<br>
+
+			<p class="info">copyright © stu nicholls - CSS play</p>
+
+		</div> <!-- end info -->
+
+		<div id="infoBottom">
+			<div class="prevNext">
+				<a href="http://www.cssplay.co.uk/menus/cssplay27.html" accesskey="N" title="Next Demonstration" class="nextDemo">NEXT</a>
+				<a href="http://www.cssplay.co.uk/menus/circular.html" accesskey="P" title="Previous Demonstration" class="prevDemo">PREVIOUS</a>
+				<a accesskey="C" href="http://www.cssplay.co.uk/comments/comments.php?comment_id=Circular%20submenu" title="CSSplay comments" class="comments">COMMENTS</a>
+			</div>
+						<div class="box800">
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-6651950180071236";
+				/* 728x90, created 3/24/09 */
+				google_ad_slot = "2160454816";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/show_ads.js">
+				</script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+			</div>
+		</div>
+
+		<div id="leftCol"> 
+
+			<h3>Information</h3>
+
+<p>A follow on from the simple single level circular menu, this one adds a sub menu level of smaller icons in a circular pattern within the top level circle. There is also the facility to add a simple description of each icon.</p>
+<p>Tested in IE6, IE7, Firefox, Opera, Safari (PC) and Google Chrome.</p>
+<p>The icons are taken from the <a href="http://iconeden.com/icon/milky-a-free-vector-iconset.html">Milky</a> set.</p>
+<p>If you want a zip file of this menu then please email me, but check the requirements in the copyright information below.</p>
+
+			<br>
+
+			<div class="box475">
+						<script type="text/javascript"><!--
+		google_ad_client = "pub-6651950180071236";
+		/* 468x60, created 3/20/09 */
+		google_ad_slot = "7558797043";
+		google_ad_width = 468;
+		google_ad_height = 60;
+		//-->
+		</script>
+		<script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/show_ads.js">
+		</script><ins style="display:inline-table;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:468px"><ins id="aswift_1_anchor" style="display:block;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:468px"><iframe width="468" height="60" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+			</div>
+			<h3>Copyright</h3>
+<p class="bold">Because of all the time and effort spent in producing this demonstration<br>I would ask that you respect my copyright.</p>
+<ol>
+<li>If you are using this on a personal web site then please retain the copyright comment in the stylesheet.<br><span class="red">A donation to the '<a href="http://www.cssplay.co.uk/support.html">Support <b class="css">CSS</b><span class="play">play</span></a>' fund is now required for this demonstration.</span></li>
+<li>If you are using this on a commercial web site, or as a paying job for a client, then please email me asking for permission - stu{at}cssplay.co.uk <span class="red">and again a donation to the '<a href="http://www.cssplay.co.uk/support.html">Support <b class="css">CSS</b><span class="play">play</span></a>' fund is required.</span></li>
+<li>If you are having problems integrating any of my demonstrations into your website then I now offer a service to fault find and correct any errors that you may have introduced. Please email me for more information.</li>
+</ol>
+
+<h3>Terms and Conditions</h3>
+<p class="bold">This demonstration can be used subject to the following terms and conditions.</p>
+<ol>
+<li>If you wish to use this demonstration in your website(s) please email me stu{at}cssplay.co.uk seeking permission.</li>
+<li>You may NOT place this demonstration on another site for others to download.</li>
+<li>You may NOT redistrubute or resell this demonstration.</li>
+<li>Users agree not to remove or edit the credit notice within the stylesheet, or claim that this demonstration is their own.</li>
+<li><span class="bold">Please see the Copyright statement above regarding the requirement for a <span class="red">support donation</span>.</span></li>
+</ol>
+		</div> <!-- end leftCol -->
+
+		<div id="midCol">
+			
+			<div class="box300">
+				<h3>Recommended Sites</h3>
+				<ul class="cssplay">
+					<li><a href="http://www.free-download.org/top/">Most downloaded software</a></li>
+					<li><a href="http://www.uk-cheapest.co.uk/">Register Domain Name</a></li>
+					<li><a href="http://www.lava.com.au/">Web Design</a></li>
+				</ul>
+			</div>
+
+		</div> <!-- end midCol -->
+		<br class="clear">
+	</div> <!-- end content -->
+
+	<div id="rightCol">
+				<div class="googlemedium">
+			<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-6651950180071236";
+				/* medium rectangle */
+				google_ad_slot = "4755057509";
+				google_ad_width = 300;
+				google_ad_height = 250;
+				//-->
+				</script>
+				<script type="text/javascript" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/show_ads.js">
+			</script><ins style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+		</div>
+
+		<div class="box300">
+			<h3>Please Support CSS play</h3>
+			<div style="width:258px; text-align:center;">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<div>
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="3206316">
+						<input type="image" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/paypal2.png" name="submit" alt="PayPal - The safer, easier way to pay online.">
+						<img alt="" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/pixel.gif" width="1" height="1">
+					</div>
+				</form>
+			</div>
+			<p style="font-size:10px; line-height:13px; text-align:justify;">Please note that if your donation is for a demo/menu then you will need to email me with the url of the demo/menu after making the donation</p>
+		</div>
+
+		<div class="box300">
+			<h3>CSS play Recommend</h3>
+			<p><a class="bannerad" href="http://www.dynamicdrive.com/style/"><img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/dynamicdrive.gif" alt="Free, practical CSS menus, layouts, and examples" title="Free, practical CSS menus, layouts, and examples" width="220" height="100"></a></p>
+		</div>
+
+		<!-- B S A HERE -->
+
+		<div class="box300">
+			<h3>Follow CSS play</h3>
+			<br>
+			<p><a href="http://facebook.com/StuCSSplay" rel="nofollow"><img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/facebook.png" alt="Facebook"></a>&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/stucssplay" rel="nofollow"><img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/twitter.png" alt="Twitter"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.cssplay.co.uk/facebook-fan-page.html" rel="nofollow"><img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/fanpage.jpg" alt="Facebook Fan Page"></a><span class="st_sharethis_large" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(http://w.sharethis.com/images/sharethis_32.png);"></span><img src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/check-big.png" style="position: absolute; top: -7px; right: -7px; width: 19px; height: 19px; max-width: 19px; max-height: 19px; display: none;"></span></span><br>
+			</p>
+			<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 106px; height: 24px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 106px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1371691797274" name="I0_1371691797274" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/fastbutton.htm" allowtransparency="true" data-gapiattached="true" title="+1"></iframe></div>
+			<script type="text/javascript">
+			  (function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+		</div>
+
+		<div class="box300">
+			<h3>CSS play pages</h3>
+			<ul>
+				<li><a href="http://www.cssplay.co.uk/favicon_ads.html">Favicon Advertising</a></li>
+				<li><a href="http://www.cssplay.co.uk/ads_page.html">Advertising rates</a></li>
+				<li><a href="http://www.cssplay.co.uk/service.html">Web design &amp; assistance</a></li>
+				<li><a href="http://www.istu.co.uk/" rel="nofollow"><b>iStu</b> - NEW website!</a></li>
+				<li><a href="http://www.w3css.co.uk/" rel="nofollow"><b>w3css</b> - NEW website!</a></li>
+			</ul>
+		</div>
+	</div> <!-- end rightCol -->
+
+	<br class="clear"><br>
+
+</div> <!-- end wrapper -->
+
+<div id="footer">
+	<div id="foot">
+		<p>© 2004-2013 Stu Nicholls - CSS play - All rights reserved</p>
+	</div> <!-- end foot -->
+</div> <!-- end footer -->
+
+<script src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-451410-1";
+urchinTracker();
+</script>
+
+
+
+
+<iframe id="stSegmentFrame" name="stSegmentFrame" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/getSegment.htm" frameborder="0" scrolling="no" width="0px" height="0px" style="display:none;"></iframe><div id="stwrapper" class="stwrapper" style="visibility: hidden; top: -999px; left: -999px; width: 500px; z-index: 89999999;"><div class="stCloseNew2"></div><iframe allowtransparency="true" id="stLframe" class="stLframe" name="stLframe" frameborder="0" scrolling="no" width="500px" height="430px" src="./Stu Nicholls   CSSplay   A circular menu with circular sub menus_files/index.5dd5fd0b155eaf5a57b6b6eacc740361.htm" style="top: 0px; left: 0px;"></iframe></div><div id="stOverlay" style="height: 100%; width: 100%; background-color: rgb(0, 0, 0); opacity: 0.6; position: fixed; display: none; left: 0px; top: 0px; z-index: 89999990;"></div></body></html>

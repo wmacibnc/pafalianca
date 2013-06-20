@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
+
+<style type="text/css">
+   body{padding:20px; font-size:14px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+   h2 {font-weight:bold; color:#000099; margin:10px 0px; }
+   p span {color:#006600; font-weight:bold; }
+   a, a:link, a:visited {color:#0000FF;}
+   textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 13px; font-family: Consolas,monospace;}
+   textarea.html {height: 300px;}
+   p {margin: 0 0 10px 0;}
+   code, pre {font-family: Consolas,monospace; color: green;}
+   ol li {margin: 0 0 15px 0;}
+</style>
+
+</head>
+
+<body>
+
+<h2>Your Menu</h2>
+
+<style type="text/css">#cssmenu ul { margin: 0; padding: 0;}
+#cssmenu li { margin: 0; padding: 0;}
+#cssmenu a { margin: 0; padding: 0;}
+#cssmenu ul {list-style: none;}
+#cssmenu a {text-decoration: none;}
+#cssmenu {height: 70px; background-color: rgb(35,35,35); box-shadow: 0px 2px 3px rgba(0,0,0,.4);}
+
+
+#cssmenu > ul > li {
+    float: left;
+    margin-left: 15px;
+    position: relative;
+}
+
+#cssmenu > ul > li > a {
+    color: rgb(160,160,160);
+    font-family: Verdana, 'Lucida Grande';
+    font-size: 15px;
+    line-height: 70px;
+    padding: 15px 20px;
+-webkit-transition: color .15s;
+   -moz-transition: color .15s;
+     -o-transition: color .15s;
+        transition: color .15s;
+}
+
+#cssmenu > ul > li > a:hover {color: rgb(250,250,250); }
+
+
+#cssmenu > ul > li > ul {
+    opacity: 0;
+    visibility: hidden;
+    padding: 16px 0 20px 0;
+    background-color: rgb(250,250,250);
+    text-align: left;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+-webkit-transition: all .3s .1s;
+   -moz-transition: all .3s .1s;
+     -o-transition: all .3s .1s;
+        transition: all .3s .1s;
+-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+        border-radius: 5px;
+-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+        box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+}
+
+#cssmenu > ul > li:hover > ul {
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+}
+
+#cssmenu > ul > li > ul:before{
+    content: '';
+    display: block;
+    border-color: transparent transparent rgb(250,250,250) transparent;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+#cssmenu > ul ul > li { position: relative;}
+
+#cssmenu ul ul a{
+    color: rgb(50,50,50);
+    font-family: Verdana, 'Lucida Grande';
+    font-size: 13px;
+    background-color: rgb(250,250,250);
+    padding: 5px 8px 7px 16px;
+    display: block;
+-webkit-transition: background-color .1s;
+   -moz-transition: background-color .1s;
+     -o-transition: background-color .1s;
+        transition: background-color .1s;
+}
+
+#cssmenu ul ul a:hover {background-color: rgb(240,240,240);}
+
+
+#cssmenu ul ul ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -16px;
+    left: 206px;
+    padding: 16px 0 20px 0;
+    background-color: rgb(250,250,250);
+    text-align: left;
+    width: 160px;
+-webkit-transition: all .3s;
+   -moz-transition: all .3s;
+     -o-transition: all .3s;
+        transition: all .3s;
+-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+        border-radius: 5px;
+-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+        box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+}
+
+
+#cssmenu ul ul > li:hover > ul { opacity: 1; left: 196px; visibility: visible;}
+
+
+#cssmenu ul ul a:hover{
+    background-color: rgb(205,44,36);
+    color: rgb(240,240,240);
+}
+</style>
+<div id='cssmenu'>
+<ul>
+   <li><a href='index.php'><span>Página Inicial</span></a></li>
+   <li><a href='institucional.php'><span>Institucional</span></a></li>
+   <li><a href='#'><span>Agende uma visita</span></a></li>
+   <li class='has-sub'><a href='#'><span>Convênios</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Assistência Médica</span></a>
+            <ul>
+               <li class='last'><a href='convenio.php'><span>Ameg</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>Assistência Odontólogica</span></a></li>
+         <li><a href='#'><span>Assistência Júridica</span></a></li>
+         <li class='last'><a href='#'><span>Tecnologia da Informação</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Atendimento</span></a></li>
+</ul>
+</div>
+<div style="clear:both; margin: 0 0 30px 0;">&nbsp;</div>
+
+<h2>Installation Instructions</h2>
+
+<ol>
+   <li>Upload the <code>menu_assets</code> folder to the root directory of your website. This is usually where your <code>index.html</code> file is.</li>
+   <li>Copy and paste the code below somewhere between the <code>&lt;head>&lt;/head></code> tags.<textarea class='css'><link href="/menu_assets/styles.css" rel="stylesheet" type="text/css"></textarea></li>
+   <li>Copy and paste the html below where ever you want your menu to show up.<textarea class='html'><div id='cssmenu'>
+<ul>
+   <li><a href='index.php'><span>Página Inicial</span></a></li>
+   <li><a href='institucional.php'><span>Institucional</span></a></li>
+   <li><a href='#'><span>Agende uma visita</span></a></li>
+   <li class='has-sub'><a href='#'><span>Convênios</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Assistência Médica</span></a>
+            <ul>
+               <li class='last'><a href='convenio.php'><span>Ameg</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>Assistência Odontólogica</span></a></li>
+         <li><a href='#'><span>Assistência Júridica</span></a></li>
+         <li class='last'><a href='#'><span>Tecnologia da Informação</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Atendimento</span></a></li>
+</ul>
+</div></textarea></li>
+</ol>
+
+<h2>Notes</h2>
+<ol>
+   <li>If you run into a problem getting your menu to work or have suggestions for the site please <a href='http://cssmenumaker.com/resources/contact'>Contact Us</a> and let us know. We will try to help as much as possible.</li>
+</ol>
+
+</body>
+</html>
